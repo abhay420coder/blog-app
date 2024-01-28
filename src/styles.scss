@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+// main.scss
+@import './assets/common';  // Note: You don't need to include the leading underscore and file extension
+@import './assets/variable';
+
+body {
+  font-family: Arial, sans-serif;
+}

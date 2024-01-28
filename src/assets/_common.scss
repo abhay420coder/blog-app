@@ -1,0 +1,135 @@
+/* Common Button Styles */
+@import './variable';
+
+
+
+// all icon-button css
+%icon-button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-repeat: no-repeat;
+
+    // syntaxt for svg code add in css 
+    // note :- don't use enter in svg code . write svg code in single line
+    // background-image: url('data:image/svg+xml;utf8,WriteSvgHtmlCodeHere');
+  }
+  
+ 
+/* Save button */
+.save-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9m3 3h8m-4-4v4"></path></svg>');
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  /* Cancel button */
+  .cancel-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>');
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  /* Done button */
+  .done-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>');
+    background-color: #00bcd4;
+    color: #fff;
+  }
+  
+  /* Close button */
+  .close-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>');
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  /* Edit button */
+  .edit-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 17.27V21h3.73l10.61-10.61-3.74-3.74L3 17.27zM21 3.87c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0L16.46 3.7l3.74 3.74L21 3.87z"/></svg>');
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Delete button */
+  .delete-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18H18M6 6l6 6m6-6l-6 6"/></svg>');
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  /* Update button */
+  .update-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 3h5v5h-2V5.83L12.83 10H15v2H9V5H4v14h10v-5h2v6H2V3h11z"/></svg>');
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  /* Play button */
+  .play-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9L5 21V3z"/></svg>');
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Stop button */
+  .stop-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18H18V6H6v12z"/></svg>');
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  /* Pause button */
+  .pause-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>');
+    background-color: #f39c12;
+    color: #fff;
+  }
+  
+  /* Next button */
+  .next-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5l15 7-15 7-15-7 15-7z"/></svg>');
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Previous button */
+  .prev-button {
+    @extend %icon-button;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l-15-7 15-7 15 7-15 7z"/></svg>');
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Hover and Focus Styles */
+  button:hover,
+  button:focus {
+    opacity: 0.8;
+  }
+  
+  /* Active State Styles */
+  button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Disabled State Styles */
+  button:disabled {
+    background-color: #bdc3c7;
+    color: #ecf0f1;
+    cursor: not-allowed;
+  }  
